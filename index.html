@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ireri Developers | Full-Stack Software Engineering (Next.js & Node.js)</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ireri Developers is a modern software engineering studio led by Brian Macharia Ireri. We build scalable web platforms, high-concurrency systems, and bespoke digital infrastructure with Next.js and Node.js. Creators of Kabila La Vijana & DeKUTSO Choice Awards." />
+  <meta name="keywords" content="Ireri Developers, Brian Macharia Ireri, Next.js Developer, Node.js Engineer, Kabila La Vijana, DeKUTSO Choice Award, Full-Stack Web Development, Software Engineering Nairobi, React, Supabase" />
+  <meta name="author" content="Ireri Developers · Brian Macharia Ireri" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ireri Developers | Full-Stack Software Engineering Studio" />
+  <meta property="og:description" content="Engineering high-scale web platforms, distributed systems, and bespoke digital solutions with Next.js and Node.js." />
+  <meta property="og:image" content="/assets/kabila-vijana.png" />
+  <meta property="og:url" content="https://ekusafamily.github.io" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ireri Developers | Full-Stack Software Engineering Studio" />
+  <meta name="twitter:description" content="Engineering high-scale web platforms, distributed systems, and bespoke digital solutions with Next.js and Node.js." />
+  <meta name="twitter:image" content="/assets/kabila-vijana.png" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310B981'><circle cx='12' cy='12' r='10'/></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Ambient Particle & Connection Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrap" aria-label="Main Navigation">
+        <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Ireri Developers Homepage">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>ireri<span style="color:var(--accent-emerald);">developers</span></span>
+          <span class="brand-tag">studio</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active" id="nav-link-home">Home</a></li>
+          <li><a href="#solutions" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+          <li><a href="#terminal-cli" class="nav-link" id="nav-link-terminal">Terminal</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-link-experience">Journey</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+            <span id="theme-icon">
+              <!-- Default dark mode icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </span>
+          </button>
+          <a href="#contact" class="btn-primary" id="btn-hire-nav">
+            <span>Hire Us</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <span class="status-beacon"></span>
+              <span class="hero-badge-text">Ireri Developers · Software Engineering Studio</span>
+            </div>
+
+            <h1 class="hero-title">
+              Engineering Scalable <span class="gradient-text">Web Platforms</span> & Production Digital Systems.
+            </h1>
+
+            <p class="hero-desc">
+              We are <strong>Ireri Developers</strong>, a full-stack engineering studio founded and led by <strong>Brian Macharia Ireri</strong>. We architect high-performance web applications, distributed APIs, and resilient digital platforms using <strong>Next.js</strong> and <strong>Node.js</strong>. Proven creators of the <strong>Kabila La Vijana</strong> nationwide youth platform and the <strong>DeKUTSO Comrade Choice Award</strong> voting system.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary" id="hero-btn-projects">
+                <span>Explore Featured Work</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+              </a>
+              <a href="#solutions" class="btn-secondary" id="hero-btn-solutions">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                <span>Our Capabilities</span>
+              </a>
+              <a href="mailto:ekusafamily014@gmail.com" class="btn-secondary" id="hero-btn-email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats-row" id="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">3,000+</span>
+                <span class="stat-label">Active Youth Reached</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">26</span>
+                <span class="stat-label">Award Categories</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">99.98%</span>
+                <span class="stat-label">Platform Reliability</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Next & Node</span>
+                <span class="stat-label">Core Specialization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Tech Portrait Card -->
+          <div class="hero-visual">
+            <div class="avatar-card-wrapper">
+              <div class="avatar-glow-ring"></div>
+              
+              <div class="floating-badge badge-top-left">
+                <span class="badge-icon-next">&Delta;</span>
+                <span>Next.js · Node.js</span>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <span class="badge-icon-mpesa">&#9679;</span>
+                <span>Full-Stack Architecture</span>
+              </div>
+
+              <div class="avatar-card">
+                <div class="avatar-img-container">
+                  <img src="/assets/avatar.jpg" alt="Brian Macharia Ireri - Lead Engineer at Ireri Developers" class="avatar-img" width="420" height="420" />
+                </div>
+                <div class="avatar-card-overlay">
+                  <div class="avatar-info">
+                    <h3>Brian Macharia Ireri</h3>
+                    <p>Lead Engineer · Ireri Developers</p>
+                  </div>
+                  <a href="https://github.com/ekusafamily" target="_blank" rel="noopener noreferrer" class="btn-details" style="font-size:0.75rem;" title="GitHub Profile">
+                    github.com/ekusafamily
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities & Solutions Section -->
+    <section class="section capabilities-section" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">What We Build</span>
+          <h2 class="section-title">Capabilities & Solutions</h2>
+          <p class="section-subtitle">
+            From technical concept to high-throughput production, Ireri Developers builds modern web software engineered for performance, security, and scale.
+          </p>
+        </div>
+
+        <div class="capabilities-grid" id="capabilities-grid">
+          <!-- Populated dynamically by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Signature Platforms</span>
+          <h2 class="section-title">Featured Production Builds</h2>
+          <p class="section-subtitle">
+            Real-world systems delivering high performance, community empowerment, and high-concurrency campus voting workflows.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" id="filter-tabs" role="tablist">
+          <button class="filter-btn active" data-category="all" role="tab" id="filter-all">All Platforms</button>
+          <button class="filter-btn" data-category="web" role="tab" id="filter-web">Web Platforms</button>
+          <button class="filter-btn" data-category="realtime" role="tab" id="filter-realtime">Real-Time & Audio</button>
+          <button class="filter-btn" data-category="tools" role="tab" id="filter-tools">Developer Tools</button>
+        </div>
+
+        <!-- Projects Dynamic Grid -->
+        <div class="projects-grid" id="projects-grid" aria-live="polite">
+          <!-- Populated dynamically by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer CLI Terminal Section -->
+    <section class="section terminal-section" id="terminal-cli">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Interactive Dev Shell</span>
+          <h2 class="section-title">Studio Developer Terminal</h2>
+          <p class="section-subtitle">
+            Query Ireri Developers' studio overview, architectural principles, and flagship projects via command line.
+          </p>
+        </div>
+
+        <div class="terminal-window" id="terminal-window">
+          <div class="terminal-titlebar">
+            <div class="terminal-buttons">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">ireri@developers: ~/studio (node v24.14 / next.js)</span>
+            <span style="font-size:0.75rem; color:var(--text-dim); font-family:var(--font-mono);">zsh</span>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output">
+<span class="highlight">Ireri Developers — Interactive Studio CLI [Version 2.4.0]</span>
+Type <span class="cyan">"help"</span> for available commands or click quick actions below.
+Try commands like: <span class="cyan">about</span>, <span class="cyan">projects</span>, <span class="cyan">skills</span>, <span class="cyan">contact</span>.
+            </div>
+          </div>
+
+          <div class="terminal-input-row" style="padding: 0.75rem 1.5rem; background: #070C18;">
+            <span class="terminal-prompt">$ ireri</span>
+            <input type="text" id="terminal-input" class="terminal-cmd-input" placeholder="Type command here (e.g. about, projects, skills) and press Enter..." autocomplete="off" />
+          </div>
+
+          <div class="terminal-quick-cmds">
+            <span style="font-size:0.75rem; color:var(--text-dim); margin-right:0.5rem; align-self:center;">Quick Commands:</span>
+            <button class="cmd-badge" data-cmd="about">about</button>
+            <button class="cmd-badge" data-cmd="projects">projects</button>
+            <button class="cmd-badge" data-cmd="skills">skills</button>
+            <button class="cmd-badge" data-cmd="contact">contact</button>
+            <button class="cmd-badge" data-cmd="theme">theme</button>
+            <button class="cmd-badge" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix & Architecture Proficiency -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Systems Matrix</h2>
+          <p class="section-subtitle">
+            Battle-tested technologies and architectural competencies applied across our web platforms.
+          </p>
+        </div>
+
+        <div class="skills-tabs" id="skills-tabs" role="tablist">
+          <button class="skill-tab-btn active" data-tab="frontend" role="tab" id="tab-frontend">Frontend & Next.js</button>
+          <button class="skill-tab-btn" data-tab="backend" role="tab" id="tab-backend">Backend & Node.js</button>
+          <button class="skill-tab-btn" data-tab="databases" role="tab" id="tab-databases">Databases & DevOps</button>
+          <button class="skill-tab-btn" data-tab="integrations" role="tab" id="tab-integrations">Integrations & APIs</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Journey & Experience Timeline -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Milestones</span>
+          <h2 class="section-title">Engineering Journey</h2>
+          <p class="section-subtitle">
+            A proven record of engineering excellence, youth empowerment platforms, and production delivery.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2025 - Present · Active Studio</span>
+              <h3 class="timeline-role">Founder & Lead Software Engineer</h3>
+              <p class="timeline-company">Ireri Developers</p>
+              <p class="timeline-desc">
+                Leading software development across Kenya for bespoke digital solutions, scalable web systems, and high-concurrency client platforms with Next.js, Node.js, and Supabase.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Ireri Developers</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Supabase</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2025 - Present · Production Platform</span>
+              <h3 class="timeline-role">Lead Full-Stack Engineer</h3>
+              <p class="timeline-company">DeKUTSO Comrade Choice Award (Dedan Kimathi University of Technology)</p>
+              <p class="timeline-desc">
+                Architected the official campus recognition and live democratic voting platform across 26 categories. Implemented point-based voting, live tier leaderboards, candidate profiles, and Supabase RLS media storage.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Supabase RLS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2024 - 2025 · Community Platform</span>
+              <h3 class="timeline-role">Lead Web Systems Architect</h3>
+              <p class="timeline-company">Kabila La Vijana Platform</p>
+              <p class="timeline-desc">
+                Spearheaded the technical build of Kabila La Vijana, creating a digital platform that connects over 3,000+ youth across all 47 counties in Kenya with mentorship, workshops, leadership cohorts, and community initiatives.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Next.js (SSR)</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Community Hub</span>
+                <span class="tech-tag">Modern CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">Academic Leadership</span>
+              <h3 class="timeline-role">Software Engineering & Technology</h3>
+              <p class="timeline-company">Dedan Kimathi University of Technology (DeKUT)</p>
+              <p class="timeline-desc">
+                Rigorous grounding in software engineering, algorithms, database systems, distributed architectures, and campus tech community leadership.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Software Engineering</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Databases</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Let's Connect</span>
+          <h2 class="section-title">Start a Project with Ireri Developers</h2>
+          <p class="section-subtitle">
+            Ready to build a scalable web application, portal, or custom software solution? Let's discuss your roadmap.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <div>
+              <h3 style="font-size:1.75rem; margin-bottom:0.5rem;">Direct Inquiries</h3>
+              <p style="line-height:1.6;">
+                Reach out directly to Brian Macharia Ireri and the Ireri Developers team for contracts, software consulting, and platform architecture.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <a href="mailto:ekusafamily014@gmail.com" class="contact-method-item" id="link-email">
+                <div class="method-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="method-text">
+                  <h4>Email</h4>
+                  <p>ekusafamily014@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/ekusafamily" target="_blank" rel="noopener noreferrer" class="contact-method-item" id="link-github">
+                <div class="method-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </div>
+                <div class="method-text">
+                  <h4>GitHub</h4>
+                  <p>github.com/ekusafamily</p>
+                </div>
+              </a>
+
+              <a href="https://wa.me/254712345678" target="_blank" rel="noopener noreferrer" class="contact-method-item" id="link-whatsapp">
+                <div class="method-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="method-text">
+                  <h4>WhatsApp / Direct</h4>
+                  <p>+254 (Kenya Direct)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <h3 style="font-size:1.5rem;">Send a Direct Message</h3>
+            
+            <div class="form-group">
+              <label class="form-label" for="form-name">Your Full Name *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Sarah Kimani" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Your Work Email *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. sarah@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Project Scope or Message *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Describe the platform, requirements, or timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" id="btn-submit-contact" style="width:100%; justify-content:center;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>ireri<span style="color:var(--accent-emerald);">developers</span></h3>
+          <p>Full-Stack Software Engineering Studio · Next.js & Node.js Specialist</p>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/ekusafamily" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="GitHub" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:ekusafamily014@gmail.com" class="footer-social-icon" title="Email" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ireri Developers. Founded & Engineered by Brian Macharia Ireri. All rights reserved.</p>
+        <p>Built with Next.js, Node.js & Modern CSS for global performance and scale.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Deep-Dive Modal -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-dynamic-content">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-dynamic-content">
+        <!-- Injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notice Element -->
+  <div class="toast-notice" id="toast-notice" role="alert" aria-live="assertive"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
